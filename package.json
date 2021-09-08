@@ -1,0 +1,25 @@
+{
+  "name": "jwtauth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trowl3r/jwtauth.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Trowl3r/jwtauth/issues"
+  },
+  "homepage": "https://github.com/Trowl3r/jwtauth#readme",
+  "devDependencies": {
+    "typescript": "^4.4.2"
+  }
+}
