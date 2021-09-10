@@ -12,7 +12,8 @@ export async function register(
   const { name, email, password } = req.body;
   const searchQuery = onlyEmail ? {$or: [{email}]} : {$or: [{email, name}]};
   try {
-    let user: Model<IUser> = await User.findOne(searchQuery);
+    // let user: Model<IUser> = await User.findOne(searchQuery);
+
 
     if (user) {
       let error: String;
