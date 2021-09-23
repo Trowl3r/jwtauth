@@ -1,1 +1,1 @@
-# MADE THE USER MODEL AND STARTED THE REGISTER METHOD
+# Finished the Register and exported everything from ./inex.ts. Also made the AuthRequest interface. 

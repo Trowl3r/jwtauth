@@ -4,6 +4,8 @@ export interface IUser extends Document {
     email: String;
     password: String;
     createdAt: Date;
+    refreshToken?: String;
+    params: any;
 }
 
 export const UserSchema: Schema = new Schema({
@@ -16,12 +18,15 @@ export const UserSchema: Schema = new Schema({
         type: String,
         required: true,
     },
+    refreshToken: {
+        type: String
+    },
     createdAt: {
         type: Date,
         default: Date.now
     }
 }); 
 
-const User = model<IUser>("User", UserSchema);
+const DefaultUser = model<IUser>("User", UserSchema);
 
-export default User;
+export default DefaultUser;
